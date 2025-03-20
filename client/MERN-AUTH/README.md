@@ -1,12 +1,71 @@
-# React + Vite
+# MERN Authentication - Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+The frontend application for the MERN Authentication system, built with React and Vite. This application provides a modern, responsive user interface for authentication operations.
 
-Currently, two official plugins are available:
+## Features
+- 🎨 Modern UI with TailwindCSS
+- 🔐 Secure authentication flows
+- 📱 Responsive design for all devices
+- 🔄 Global State management with Context Hook
+- 🛣️ Protected routing
+- ✨ Form validation
+- React Hot Toast for toasts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React 18
+- Vite
+- React Router DOM
+- Axios
+- React Hook Form
 
-## Expanding the ESLint configuration
+## Project Structure
+```bash
+src/
+├── components/       # Reusable UI components
+├── pages/           # Page components
+├── features/        # Redux slices and features
+├── services/        # API services
+└── App.jsx         # Main application component
+```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### Prerequisites
+- Node.js 14.0 or later
+- npm or yarn
+
+### Installation
+1. Install dependencies:
+```bash
+npm install
+```
+
+2. Create a `.env` file in the root directory:
+```env
+VITE_BACKEND_URL=http://localhost:3000
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+## Available Scripts
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run lint` - Run ESLint
+- `npm run preview` - Preview production build
+
+## Development
+- Uses Vite for faster development experience
+- Includes ESLint configuration
+- Supports hot module replacement
+
+## Build
+To build for production:
+```bash
+npm run build
+```
+
+The build artifacts will be stored in the `dist/` directory.
